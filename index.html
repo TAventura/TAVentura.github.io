@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <header>
+        <h1 class="display-4">Ta Te Ti</h1>
+    </header>
+
+    <p id="anuncio">Es el turno de: Jugador1</p>
+
+    <div id = "nombres">
+        <h2 class="h3">Elijan sus nombres!! (dejar en blanco para predeterminado)</h2>
+        <label for="input1">Nombre Jugador 1</label>
+        <input type="text" id="input1" value="Jugador1">
+        <label for="input2">Nombre Jugador 2</label>
+        <input type="text" id="input2" value="Jugador2">
+        <button class = "btn btn-primary" onclick="empezar()">Jugar</button>
+    </div>
+    <main id="tablero">
+
+        <!-- A cada button le vamos a poner una imagen de una cruz o un circulo para marcarlo segun el jugador-->
+        <button id="x11" onclick="marcar('x11')"></button> 
+        <button id="x12" onclick="marcar('x12')"></button>
+        <button id="x13" onclick="marcar('x13')"></button>
+        <button id="x21" onclick="marcar('x21')"></button>
+        <button id="x22" onclick="marcar('x22')"></button>
+        <button id="x23" onclick="marcar('x23')"></button>
+        <button id="x31" onclick="marcar('x31')"></button>
+        <button id="x32" onclick="marcar('x32')"></button>
+        <button id="x33" onclick="marcar('x33')"></button>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

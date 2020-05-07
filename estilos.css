@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tablero {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1%;
+    padding: 2%;
+    border: 1px solid black;
+    width: 35vw;
+    height: 35vw;
+}
+
+#tablero div, #tablero button {
+    height: 30%;
+    width:  30%;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 5%;
+}
+
+button img {
+    width: 100%;
+    height: 100%;
+}
+
+#anuncio {
+    font-size: 2.5vw;
+}
+
+#nombres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nombres input {
+    width: 70%;
+    margin: 1.5%;
+}
